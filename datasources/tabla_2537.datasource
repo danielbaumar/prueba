@@ -1,0 +1,13 @@
+SCHEMA >
+    `Provincia` Nullable(String),
+    `Poblacion` Nullable(Int64)
+
+ENGINE MergeTree
+ENGINE_PARTITION_KEY toYear(insertion_date)
+ENGINE_SORTING_KEY insertion_date
+
+IMPORT_SERVICE bigquery
+IMPORT_SCHEDULE */5 * * * *
+IMPORT_STRATEGY replace
+IMPORT_QUERY SELECT `Provincia`, `Poblacion` FROM `rock-embassy-366808.tabla.tabla`
+IMPORT_EXTERNAL_DATASOURCE rock-embassy-366808.tabla.tabla

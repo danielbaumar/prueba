@@ -1,0 +1,9 @@
+NODE filtrar
+SQL >
+    SELECT toHour(tpep_pickup_datetime) as hora, trip_distance
+    FROM yellow_tripdata_2018_01
+    WHERE passenger_count = 4
+
+NODE resultado
+SQL >
+    SELECT hora, avg(trip_distance) as distancia FROM filtrar GROUP BY hora
