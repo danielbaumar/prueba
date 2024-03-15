@@ -3,4 +3,4 @@ DESCRIPTION >
     Generated from the command line
 
 SQL >
-    select * from tabla_2537 limit 4
+    select * from tabla_2537 limit 3
