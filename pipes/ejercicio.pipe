@@ -1,0 +1,6 @@
+NODE endpoint
+DESCRIPTION >
+    Generated from the command line
+
+SQL >
+    SELECT COUNT(*) AS viajes FROM yellow_tripdata_2018_01 WHERE passenger_count = 4

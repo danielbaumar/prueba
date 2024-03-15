@@ -1,0 +1,7 @@
+NODE endpoint
+DESCRIPTION >
+    Generated from the command line
+
+SQL >
+    %
+    select * from tabla_2537 where Provincia = {{ String(pro, 'Buenos Aires') }}

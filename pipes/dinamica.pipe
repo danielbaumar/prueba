@@ -1,0 +1,6 @@
+TOKEN "dinamica_endpoint_read_7028" READ
+
+NODE dinamica_0
+SQL >
+    %
+    SELECT * FROM tabla_2537 WHERE Provincia = {{ String(pro, 'Buenos Aires') }}

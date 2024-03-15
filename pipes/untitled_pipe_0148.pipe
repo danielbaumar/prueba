@@ -1,0 +1,6 @@
+NODE untitled_pipe_0148_0
+SQL >
+    SELECT some_int, sumState(values_weighted) AS total FROM prueba GROUP BY some_int
+
+TYPE MATERIALIZED
+DATASOURCE untitled_pipe_0148_0_mv

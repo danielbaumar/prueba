@@ -1,0 +1,6 @@
+SCHEMA >
+    `some_int` Int64,
+    `total` AggregateFunction(sum, Int16)
+
+ENGINE AggregatingMergeTree
+ENGINE_SORTING_KEY some_int

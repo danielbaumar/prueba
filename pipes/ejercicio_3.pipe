@@ -1,0 +1,10 @@
+NODE endpoint
+DESCRIPTION >
+    Generated from the command line
+
+SQL >
+    %
+    select toHour(tpep_pickup_datetime) as hora, avg(trip_distance) as distancia
+    from yellow_tripdata_2018_01
+    where passenger_count = {{ Int32(pasajeros, 1) }}
+    group by hora

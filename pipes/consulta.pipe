@@ -1,0 +1,3 @@
+NODE consulta_0
+SQL >
+    SELECT some_int, sumMerge(total) as total FROM untitled_pipe_0148_0_mv group by some_int

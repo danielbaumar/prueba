@@ -1,0 +1,9 @@
+TOKEN "untitled_pipe_0903_endpoint_read_3202" READ
+
+NODE pipe_poblacion
+SQL >
+    SELECT a.Provincia FROM tabla_2537 AS a WHERE a.Poblacion > 500000
+
+NODE pipe_2
+SQL >
+    SELECT Provincia FROM pipe_poblacion WHERE Provincia like 'C%'
